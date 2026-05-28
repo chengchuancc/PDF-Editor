@@ -9,12 +9,14 @@
 
 ## 📥 下载
 
-| 平台 | 下载链接 | 说明 |
-|------|---------|------|
-| macOS (Intel + Apple Silicon) | [PDF-Editor-1.0.0.dmg](../../releases/latest/download/PDF-Editor-1.0.0.dmg) | 通用版本，支持 Intel 和 M 系列芯片 |
-| Windows (64位) | [PDF-Editor-Setup-1.0.0.exe](../../releases/latest/download/PDF-Editor-Setup-1.0.0.exe) | 安装程序，支持自定义安装路径 |
+| 平台 | 下载链接 | 大小 | 说明 |
+|------|---------|------|------|
+| macOS (Apple Silicon) | [PDF.Editor-1.0.0-arm64.dmg](https://github.com/chengchuancc/PDF-Editor/releases/download/v1.0.0/PDF.Editor-1.0.0-arm64.dmg) | 114 MB | M1 / M2 / M3 / M4 芯片 |
+| macOS (Intel) | [PDF.Editor-1.0.0.dmg](https://github.com/chengchuancc/PDF-Editor/releases/download/v1.0.0/PDF.Editor-1.0.0.dmg) | 122 MB | Intel 芯片 |
 
-> 💡 如果下载链接失效，请前往 [Releases 页面](../../releases) 查看最新版本。
+> 💡 如果下载链接失效，请前往 [Releases 页面](https://github.com/chengchuancc/PDF-Editor/releases) 查看最新版本。
+>
+> 🪟 Windows 版本暂未提供，如有需要可以自行从源码构建：`npm run electron:build:win`
 
 ## ✨ 功能特性
 
