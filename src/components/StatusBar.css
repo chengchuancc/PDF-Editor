@@ -1,0 +1,37 @@
+.statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--statusbar-bg);
+  border-top: 1px solid var(--border);
+  padding: 0 12px;
+  height: 28px;
+  font-size: 11px;
+  color: var(--statusbar-text);
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.statusbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.statusbar-filename {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.statusbar-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.statusbar-sep {
+  opacity: 0.3;
+}

@@ -1,0 +1,146 @@
+.about-modal {
+  background: #2b2b2b;
+  border-radius: 16px;
+  padding: 32px;
+  min-width: 380px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.about-logo {
+  font-size: 48px;
+  margin-bottom: 4px;
+}
+
+.about-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.about-version {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.about-desc {
+  margin-top: 16px;
+}
+
+.about-desc p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.about-features {
+  font-size: 11px !important;
+  letter-spacing: 0.5px;
+}
+
+.about-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
+}
+
+.about-author {
+  margin-bottom: 12px;
+}
+
+.about-author-label {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.about-author-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.about-author-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: color 0.2s, transform 0.1s;
+}
+
+.about-author-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+.about-website {
+  margin-bottom: 12px;
+}
+
+.about-website-btn {
+  font-size: 13px;
+  color: var(--accent);
+  background: rgba(74, 144, 217, 0.08);
+  border: 1px solid rgba(74, 144, 217, 0.25);
+  border-radius: 6px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.about-website-btn:hover {
+  background: rgba(74, 144, 217, 0.15);
+  color: var(--accent-hover);
+}
+
+.about-copyright {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.about-tech {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.about-tech span {
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  background: rgba(74, 144, 217, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(74, 144, 217, 0.2);
+}
+
+.about-close-btn {
+  padding: 8px 32px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.about-close-btn:hover {
+  background: var(--accent-hover);
+}

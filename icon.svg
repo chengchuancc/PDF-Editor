@@ -1,0 +1,42 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="doc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="20"/>
+      <feOffset dx="0" dy="10" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+  
+  <!-- Document shape -->
+  <g filter="url(#shadow)">
+    <path d="M 280 180 L 640 180 L 744 284 L 744 844 L 280 844 Z" fill="url(#doc)"/>
+    <path d="M 640 180 L 640 284 L 744 284 Z" fill="#e0e0e0"/>
+  </g>
+  
+  <!-- Text lines -->
+  <rect x="360" y="380" width="304" height="32" rx="8" fill="#667eea" opacity="0.8"/>
+  <rect x="360" y="440" width="280" height="32" rx="8" fill="#667eea" opacity="0.6"/>
+  <rect x="360" y="500" width="320" height="32" rx="8" fill="#667eea" opacity="0.7"/>
+  <rect x="360" y="560" width="260" height="32" rx="8" fill="#667eea" opacity="0.5"/>
+  
+  <!-- PDF badge -->
+  <circle cx="512" cy="720" r="80" fill="#e74c3c"/>
+  <text x="512" y="740" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle">PDF</text>
+</svg>

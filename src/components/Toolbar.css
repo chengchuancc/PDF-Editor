@@ -1,0 +1,128 @@
+.toolbar {
+  display: flex;
+  align-items: flex-end;
+  background: var(--toolbar-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 4px 8px 4px;
+  gap: 0;
+  overflow-x: auto;
+  flex-shrink: 0;
+  min-height: 56px;
+}
+
+.toolbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.toolbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+.toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  padding-bottom: 2px;
+}
+
+/* Section container: label on top, buttons below */
+.toolbar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 0 2px;
+}
+
+.toolbar-section-label {
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+  line-height: 1;
+  padding-left: 2px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.toolbar-section-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+/* Thicker divider between sections */
+.toolbar-section-divider {
+  width: 2px;
+  height: 36px;
+  background: var(--border);
+  margin: 0 4px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  color: var(--toolbar-text);
+  transition: background 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+
+.toolbar-btn:hover:not(:disabled) {
+  background: var(--toolbar-hover);
+}
+
+.toolbar-btn.active {
+  background: var(--toolbar-active);
+  color: #fff;
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.page-input-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.page-input {
+  width: 40px;
+  height: 26px;
+  text-align: center;
+  background: #1e1e1e;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--toolbar-text);
+  font-size: 12px;
+  padding: 0 4px;
+  -moz-appearance: textfield;
+}
+
+.page-input::-webkit-inner-spin-button,
+.page-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.page-total {
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.zoom-label {
+  font-size: 12px;
+  color: var(--toolbar-text);
+  min-width: 40px;
+  text-align: center;
+  user-select: none;
+}
